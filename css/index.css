@@ -35,12 +35,22 @@ color:  hsl(240, 2%, 26%);
        margin-top: 60px;
        
 }
-.hello img{
-background-image: url(animal2.jpeg);
-background-position: center;
-background-repeat: repeat;
-background-size: cover;
+.hello img {
+    display: block;
+    margin: 0 auto;
+    filter: brightness(1.2) contrast(1.1) saturate(1.2);
 }
+.hello img {
+    filter: brightness(1.2) contrast(1.1) saturate(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    border-radius: 50%;
+}
+.hello img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
 .me{
 text-align: center;
 padding: 0px;
